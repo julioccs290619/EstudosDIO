@@ -152,3 +152,32 @@ if (condicao === 1) {
 } else {
     console.log('Condição de pagamento inválida');
 }
+
+/*
+A interpolação de strings no JavaScript permite criar strings dinâmicas, inserindo variáveis e expressões diretamente dentro delas. Isso é feito utilizando template literals, que são definidas por crases (\``) em vez de aspas simples ou duplas.
+
+Sintaxe Básica
+Para realizar a interpolação, você insere a variável ou expressão dentro de ${} dentro de uma template literal.
+
+Exemplo Básico:
+
+    const nome = "Júlio";
+    const idade = 25;
+
+    // Sem interpolação (concatenação tradicional)
+    const mensagem1 = "Meu nome é " + nome + " e eu tenho " + idade + " anos.";
+    console.log(mensagem1); // Saída: Meu nome é Júlio e eu tenho 25 anos.
+
+    // Com interpolação de string
+    const mensagem2 = `Meu nome é ${nome} e eu tenho ${idade} anos.`;
+    console.log(mensagem2); // Saída: Meu nome é Júlio e eu tenho 25 anos.
+*/
+
+let userName = getFirstName("Nome do Usuario")
+
+function getFirstName(name){
+    let getFirstName = name.split(" ")[0]
+    return firstName
+}
+
+console.log(`Seja bem vindo ${userName}`)
