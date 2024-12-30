@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+
+mark {
+    background-color: yellow;
+    padding: 0 5px;
+}
+
+small {
+    font-size: 0.8em;
+    color: gray;
+}
+
+i {
+    font-style: italic;
+    color: #ff5722;
+}
+
+u {
+    text-decoration: underline;
+    color: blue;
+}
+
+strong {
+    font-weight: bold;
+    color: darkblue;
+}
+
+ol, ul {
+    padding-left: 20px;
+}
+
+ol li, ul li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+sub {
+    font-size: 0.8em;
+    vertical-align: sub;
+}
+
+sup {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+blockquote {
+    background-color: #f1f1f1;
+    border-left: 5px solid #ccc;
+    padding: 10px 20px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+del {
+    text-decoration: line-through;
+    color: red;
+}
+
+abbr {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+font {
+    font-family: 'Arial', sans-serif;
+    color: blue;
+}
