@@ -1,0 +1,151 @@
+/* Reset básico para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Barra de navegação (se houver) */
+.bar {
+    background-color: #333;
+    height: 2px;
+    margin-bottom: 20px;
+}
+
+/* Layout principal com flexbox */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Sidebar (menu de navegação lateral) */
+nav.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+nav.sidebar ul {
+    list-style-type: none;
+}
+
+nav.sidebar li {
+    margin-bottom: 10px;
+}
+
+nav.sidebar a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+nav.sidebar a:hover {
+    color: #0056b3;
+}
+
+/* Seção principal do artigo */
+main.main {
+    flex-grow: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+main p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Seção de âncoras à direita */
+aside.anchors {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside.anchors h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+aside.anchors ul {
+    list-style-type: none;
+}
+
+aside.anchors li {
+    margin-bottom: 10px;
+}
+
+aside.anchors a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+aside.anchors a:hover {
+    color: #0056b3;
+}
+
+/* Rodapé */
+footer.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilos para tela pequena (mobile) */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.sidebar, aside.anchors {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main.main {
+        width: 100%;
+    }
+}
